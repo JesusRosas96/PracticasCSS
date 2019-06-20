@@ -1,54 +1,79 @@
-@media (max-width: 380px) {
-       body {
-           background-color: white;
-       }
-       .contenedor {
-           width: 80%;
-           margin: auto;
-           background-color: green;
-           padding: 10px;
-       }
-       .cel {
-           color: whitesmoke;
-           text-align: center;
-       }
-       .tablet, .pc {
-           display: none;
-       }
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
-@media (min-width: 381px)and (max-width: 800px) {
-    body {
-        background-color: white;
-    }
-    .contenedor {
-        width: 80%;
-        margin: auto;
-        background-color: blue;
-        padding: 10px;
-    }
-    .tablet {
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
-    .cel, .pc {
-        display: none;
-    }
+
+.menu {
+    background-color: darkblue;
+    margin-bottom:  20px;
 }
-@media (min-width: 801px) {
-    body {
-        background-color: white;
-    }
-    .contenedor {
-        width: 80%;
-        margin: auto;
-        background-color: red;
-        padding: 10px;
-    }
-    .pc {
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
-    .cel, .tablet {
-        display: none;
-    }
+
+.menu li {
+     display:inline-block; 
+}
+
+.menu li a {
+      display:block;
+      padding:  10px 15px;
+      color:whitesmoke;
+      text-decoration: none;
+}
+
+.menu li a span {
+  margin-right: 5px;
+}
+
+.menu li a:hover {
+    background-color: rgb(86, 129, 129);
+}
+
+.lista {
+    margin-bottom: 20px;
+}
+
+.lista li {
+    border: 1px solid #999;
+    border-top:transparent;
+    width: 180px;
+}
+
+.lista li a {
+    color:darkgrey;
+    display:block;
+    padding: 10px 0px 10px 10px;
+    text-decoration: none;
+}
+
+.lista li a span {
+  margin-right: 5px;
+}
+
+.lista li:first-child {
+    border-top:1px solid #999; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+.lista li:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.lista li:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.redes li {
+     display:inline-block;
+     margin-right: 10px;
+     background-color: #00aced;
+     text-align: center;
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+}
+
+.redes li a {
+    font-size: 24px;
+    color:#fff;
+    line-height: 50px;
 }
